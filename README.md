@@ -19,12 +19,5 @@ sitemap:
 
 
 
-### Importante
-<div class="box">
-  <p>
-Consulte con nuestros ingenieros de control la  posible integracion de su Smart Home con nuestros equipos
-  </p>
-</div>
 
-<span class="image fit"><img src="{{ "/images/s/communication-1439187_1280.jpg" | absolute_url }}" alt="" /></span>
 
