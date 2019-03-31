@@ -1,5 +1,4 @@
-
-## Sistema de supervision y control
+# Sistema de supervision y control
 
 - <b>Vendor-free</b>. Aplicable a cualquier marca y modelo.  Realizado aplicaciones y componentes abiertos
 - <b>Edge Computing<b>. Sus datos, seran solo suyos y accesibles siempre.  
