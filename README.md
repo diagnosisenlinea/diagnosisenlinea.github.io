@@ -1,12 +1,4 @@
----
-layout: page
-title: Sistema de supervision y control
-description:  Micro-Fog genérica, privada, escalable y de alta disponibilidad
-sitemap:
-    priority: 0.7
-    lastmod: 2017-11-02
-    changefreq: weekly
----
+
 ## Sistema de supervision y control
 
 - <b>Vendor-free</b>. Aplicable a cualquier marca y modelo.  Realizado aplicaciones y componentes abiertos
