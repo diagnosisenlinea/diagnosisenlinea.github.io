@@ -477,7 +477,8 @@
           <p><strong>1</strong> Instalacion y Puesta en servicio (HW/SW)</p>
         </div>
         <div class="panel-footer">
-          <button class="btn btn-lg">Solicitar</button>
+          <button class="btn btn-lg"  >Solicitar</button>
+        
         </div>
       </div>      
     </div>    
@@ -504,7 +505,10 @@
       <textarea class="form-control" id="comments" name="comments" placeholder="Commentario" rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Envia</button>
+          <button class="btn btn-default pull-right" type="submit"  onClick="(function(){
+            alert('fuera de servicio, utilice el email');
+            return false;
+        })();return false;">Envia</button>
         </div>
       </div>
     </div>
