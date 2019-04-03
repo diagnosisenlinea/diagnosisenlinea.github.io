@@ -412,6 +412,21 @@
 <div id="pricing" class="container-fluid">
   <div class="text-center">
     <h2>Precios</h2><p>(Incl. IVA)</p>
+    <div>
+    <form class="container-fluid" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="SVBC622UNDE7L">
+      <table class="container-fluid">
+      <tr><td><input type="hidden" name="on0" value="Servicio"></td></tr><tr><td><select name="os0">
+        <option value="Básica Inicio">Básica  €899,00 EUR</option>
+        <option value="Elevada Inicio">Elevada  €1299,00 EUR</option>
+      </select> </td></tr>
+      </table>
+      <input type="hidden" name="currency_code" value="EUR">
+      <input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal, la forma rápida y segura de pagar en Internet.">
+      <img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+      </form>
+    </div>
     <!-- <h4>(*) Curvas en TR de P(kW) - t(1h/1d/2d/7d/1m/1a); T.refresco = 5s.  </h4> -->
     <h4>(*) Curvas en TR de P(kW) - t(1/24/48)h/S/M/A); T.refresco de 5s.  </h4>
   </div>
@@ -505,16 +520,14 @@
       <textarea class="form-control" id="comments" name="comments" placeholder="Commentario" rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit"  onClick="(function(){
-            alert('fuera de servicio, utilice el email');
-            return false;
-        })();return false;">Envia</button>
+
         </div>
       </div>
     </div>
   </div>
 </div>
 
+  
 <!-- Image of location/map -->
 <!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%"> -->
 
