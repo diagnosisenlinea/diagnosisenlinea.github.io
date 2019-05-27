@@ -9,12 +9,12 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="0 0 398.95072 168.15961"
+   viewBox="0 0 171.55516 168.15961"
    version="1.1"
    id="svg247"
-   sodipodi:docname="wattbucket.svg"
+   sodipodi:docname="wattbucket-corto.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   width="398.95071"
+   width="171.55516"
    height="168.15961">
   <metadata
      id="metadata253">
@@ -30,30 +30,6 @@
   </metadata>
   <defs
      id="defs251">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient849">
-      <stop
-         style="stop-color:#ffff00;stop-opacity:1"
-         offset="0"
-         id="stop845" />
-      <stop
-         style="stop-color:#ff0000;stop-opacity:1"
-         offset="1"
-         id="stop847" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient841">
-      <stop
-         style="stop-color:#ffff00;stop-opacity:1"
-         offset="0"
-         id="stop837" />
-      <stop
-         style="stop-color:#ff0000;stop-opacity:1"
-         offset="1"
-         id="stop839" />
-    </linearGradient>
     <linearGradient
        inkscape:collect="always"
        id="linearGradient833">
@@ -95,7 +71,7 @@
        x2="290.7438"
        y2="142.49471"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.5900565,0,0,0.5900565,-1.162804e-4,-1.1841433e-4)" />
+       gradientTransform="matrix(0.5900565,0,0,0.5900565,-1.1645708e-4,-1.1857787e-4)" />
     <radialGradient
        inkscape:collect="always"
        xlink:href="#linearGradient833"
@@ -107,26 +83,6 @@
        r="89.279633"
        gradientTransform="matrix(0.86732788,-0.01103009,0.01326346,1.0429453,-42.483333,-57.763978)"
        gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient841"
-       id="linearGradient843"
-       x1="250.80399"
-       y1="217.76163"
-       x2="669.14819"
-       y2="224.73651"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.5900565,0,0,0.5900565,-1.162804e-4,-1.1841433e-4)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient849"
-       id="linearGradient851"
-       x1="290.73389"
-       y1="94.123871"
-       x2="665.94318"
-       y2="88.892708"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.5900565,0,0,0.5900565,12.205939,-17.437341)" />
   </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -144,7 +100,7 @@
      inkscape:snap-text-baseline="false"
      inkscape:zoom="0.57348584"
      inkscape:cx="292.09707"
-     inkscape:cy="-77.370753"
+     inkscape:cy="-77.370754"
      inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
@@ -163,26 +119,4 @@
      d="M 47.291808,30.540703 64.553345,123.5955 86.417971,30.540703 107.70722,124.39084 126.11952,30.540703 v 0"
      id="path440"
      inkscape:connector-curvature="0" />
-  <text
-     xml:space="preserve"
-     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:77.17084503px;line-height:1.25;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffe907;fill-opacity:0.73333333;stroke:url(#linearGradient851);stroke-width:8.85084724;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     x="184.09071"
-     y="65.380959"
-     id="text4961"><tspan
-       sodipodi:role="line"
-       id="tspan4959"
-       x="184.09071"
-       y="65.380959"
-       style="fill:#ffe907;fill-opacity:0.73333333;stroke:url(#linearGradient851);stroke-width:8.85084724;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Watt</tspan></text>
-  <text
-     xml:space="preserve"
-     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:77.17084503px;line-height:1.25;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#0000ff;fill-opacity:0;stroke:url(#linearGradient843);stroke-width:8.85084724;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     x="154.80612"
-     y="156.35022"
-     id="text4961-3"><tspan
-       sodipodi:role="line"
-       id="tspan4959-8"
-       x="154.80612"
-       y="156.35022"
-       style="fill:#0000ff;fill-opacity:0;stroke:url(#linearGradient843);stroke-width:8.85084724;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Bucket</tspan></text>
 </svg>
