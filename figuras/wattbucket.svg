@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    viewBox="0 0 676.12311 284.98942"
@@ -28,6 +30,14 @@
   </metadata>
   <defs
      id="defs251">
+    <linearGradient
+       id="linearGradient2294"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#ffea06;stop-opacity:1;"
+         offset="0"
+         id="stop2292" />
+    </linearGradient>
     <inkscape:path-effect
        effect="simplify"
        id="path-effect436"
@@ -40,6 +50,15 @@
        simplify_just_coalesce="false"
        simplifyindividualpaths="false"
        simplifyJustCoalesce="false" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2294"
+       id="linearGradient2296"
+       x1="0.0001973352"
+       y1="142.4947"
+       x2="290.74381"
+       y2="142.4947"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -50,24 +69,24 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="960"
-     inkscape:window-height="1023"
+     inkscape:window-width="1920"
+     inkscape:window-height="1025"
      id="namedview249"
      showgrid="false"
      inkscape:snap-text-baseline="false"
      inkscape:zoom="0.28674292"
-     inkscape:cx="-169.28721"
+     inkscape:cx="-723.79087"
      inkscape:cy="178.59143"
-     inkscape:window-x="960"
+     inkscape:window-x="0"
      inkscape:window-y="27"
-     inkscape:window-maximized="0"
+     inkscape:window-maximized="1"
      inkscape:current-layer="svg247"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0" />
   <path
-     style="fill:none;stroke:#0000ff;stroke-width:44.84239197;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="fill:none;stroke:url(#linearGradient2296);stroke-width:44.842;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      d="M 22.479816,26.699029 65.095333,262.5682 H 226.63557 L 268.26634,22.735858"
      id="path438"
      inkscape:connector-curvature="0" />
@@ -89,7 +108,7 @@
        style="fill:#000000;fill-opacity:0;stroke:#ff9600;stroke-width:15;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;">Watt</tspan></text>
   <text
      xml:space="preserve"
-     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:130.78552246px;line-height:1.25;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#0000ff;fill-opacity:0;stroke:#0000ff;stroke-width:15;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:130.78552246px;line-height:1.25;font-family:'Century Schoolbook L';-inkscape-font-specification:'Century Schoolbook L, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#0000ff;fill-opacity:0;stroke:#ffea06;stroke-width:15;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
      x="262.35834"
      y="264.97519"
      id="text4961-3"><tspan
@@ -97,5 +116,5 @@
        id="tspan4959-8"
        x="262.35834"
        y="264.97519"
-       style="fill:#0000ff;fill-opacity:0;stroke:#0000ff;stroke-width:15;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Bucket</tspan></text>
+       style="fill:#0000ff;fill-opacity:0;stroke:#ffea06;stroke-width:15;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;">Bucket</tspan></text>
 </svg>
