@@ -645,14 +645,14 @@
 
 
 
-
+  
 
 
 
 
 
   <!-- Container (Contact Section) -->
-  <form id="contactForm" class="container-fluid bg-grey">
+  <div id="contactForm" class="container-fluid bg-grey">
     <h2 class="text-center">CONTACT</h2>
     <div class="row">
       <div class="col-sm-5">
@@ -661,49 +661,47 @@
         <p><span class="glyphicon glyphicon-phone"></span> +34 600 366 211</p>
         <!-- <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p> -->
       </div>
-    </div>
+      <div class="col-sm-7 slideanim">
+        <div class="row">
+
+          <label for="validationTooltip01">Estoy interesado en</label>
+          <select class="form-control" name="name" required>
+            <option value="1" selected>servicio gestión energética</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
 
 
-    <div class="col-sm-7">
-      <div class="row">
-
-        <label for="validationTooltip01">Estoy interesado en</label>
-        <select class="form-control" name="name" required>
-          <option value="1" selected>servicio gestión energética</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
+          <label for="validationTooltip01">soy</label>
+          <select class="form-control" name="content" required>
+            <option value="1" selected>Instalador</option>
+            <option value="2">Ingenieria</option>
+            <option value="3">Particular</option>
+          </select>
 
 
-        <label for="validationTooltip01">soy</label>
-        <select class="form-control" name="content" required>
-          <option value="1" selected>Instalador</option>
-          <option value="2">Ingenieria</option>
-          <option value="3">Particular</option>
-        </select>
+          <label for="validationTooltip01">mi email</label>
+          <input type="email" class="form-control" id="inputEmail3" placeholder="Email" name="email" required>
 
 
-        <label for="validationTooltip01">mi email</label>
-        <input type="email" class="form-control" id="inputEmail3" placeholder="Email" name="email" required>
+          <label for="validationTooltip01">comentario</label>
+          <textarea class="form-control" id="comments" name="comentario" placeholder="comentario" rows="5"></textarea><br>
+        </div>
+
+        <div class="form-group row">
+          <button class="btn btn-default pull-right" id="submit" type="submit">Enviar</button>
+        </div>
+
+        <div id="toast"></div>
 
 
-        <label for="validationTooltip01">comentario</label>
-        <textarea class="form-control" id="comments" name="comentario" placeholder="comentario" rows="5"></textarea><br>
-      </div>
-
-      <div class="form-group row">
-        <button class="btn btn-default pull-right" id="submit" type="submit">Enviar</button>
-      </div>
-
-      <div id="toast"></div>
-
-
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck1">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck1">
+        </div>
       </div>
     </div>
-  </form>
-
+  </div>
+  </div>
 
   <!-- Image of location/map -->
   <!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%"> -->
@@ -732,6 +730,16 @@
 
 
 
+  <form id="contactForm">
+    <label>Name</label>
+    <input type="text" placeholder="Name" name="name" required>
+    <label>Email Address</label>
+    <input type="email" placeholder="Email Address" name="email" required>
+    <label>Message</label>
+    <textarea rows="5" placeholder="Message" name="content" required></textarea>
+    <div id="toast"></div>
+    <button type="submit" id="submit">Send</button>
+  </form>
 
 
 
