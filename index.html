@@ -332,7 +332,7 @@
           <li><a href="#services">SERVICIOS</a></li>
           <!-- <li><a href="#portfolio">PORTFOLIO</a></li> -->
           <!-- <li><a href="#pricing">PRECIOS</a></li> -->
-          <li><a href="contact.html">CONTACTO</a></li>
+          <li><a href="#contactForm">CONTACTO</a></li>
           <li><a href="https://wattbucket.com/blog/">BLOG</a></li>
         </ul>
       </div>
@@ -653,10 +653,9 @@
 
   <!-- Container (Contact Section) -->
   <form id="contactForm" class="container-fluid bg-grey">
-    <h2 class="text-center">CONTACT</h2>
+    <h2 class="text-center">CONTACTO</h2>
     <div class="row">
       <div class="col-sm-5">
-        <p>Atenderemos su petidion en 24 h.</p>
         <p><span class="glyphicon glyphicon-map-marker"></span> C/ Severo Ochoa, 27 - 29590, PTA Málaga </p>
         <p><span class="glyphicon glyphicon-phone"></span> +34 600 366 211</p>
         <!-- <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p> -->
@@ -760,7 +759,7 @@
     }
 
     function success() {
-      toast.innerHTML = 'Thanks for sending me a message! I\'ll get in touch with you ASAP. :)'
+      toast.innerHTML = 'Gracias, le atenderemos lo antes posible'
       submit.disabled = false
       submit.blur()
       form.name.focus()
@@ -770,14 +769,14 @@
     }
 
     function error(err) {
-      toast.innerHTML = 'There was an error with sending your message, hold up until I fix it. Thanks for waiting.'
+      toast.innerHTML = 'Hay algun problem, por favor intentelo mas tarde'
       submit.disabled = false
       console.log(err)
     }
 
     form.addEventListener('submit', function (e) {
       e.preventDefault()
-      toast.innerHTML = 'Sending'
+      toast.innerHTML = 'Enviando ...'
       submit.disabled = true
 
       const payload = {
