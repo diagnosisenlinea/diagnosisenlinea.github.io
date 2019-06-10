@@ -661,13 +661,13 @@
         <label for="validationTooltip01">Estoy interesado en</label>
         <select class="form-control" name="name" required>
           <option value="1" selected>servicio gestión energética</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
+          <option value="2">Optimizacion de Tarifa</option>
+          <option value="3">Consutoria energética</option>
         </select>
 
 
         <label for="validationTooltip01">soy</label>
-        <select class="form-control" name="content" required>
+        <select class="form-control" name="content1" required>
           <option value="1" selected>Instalador</option>
           <option value="2">Ingenieria</option>
           <option value="3">Particular</option>
@@ -679,7 +679,7 @@
 
 
         <label for="validationTooltip01">comentario</label>
-        <textarea class="form-control" id="comments" name="comentario" placeholder="comentario" rows="5"></textarea><br>
+        <textarea class="form-control" id="comments" name="content2" placeholder="comentario" rows="5"></textarea><br>
       </div>
 
       <div class="form-group row">
@@ -741,7 +741,7 @@
   <script>
 
     const form = document.getElementById('contactForm')
-    const url = 'https://bfub4w5v2c.execute-api.eu-west-1.amazonaws.com/dev/email/send'
+    const url = 'https://qoeyalt93a.execute-api.eu-west-1.amazonaws.com/dev/email/send'
     const toast = document.getElementById('toast')
     const submit = document.getElementById('submit')
 
@@ -783,7 +783,8 @@
       const payload = {
         name: form.name.value,
         email: form.email.value,
-        content: form.content.value
+        content1: form.content1.value,
+        content2: form.content2.value
       }
       post(url, payload, function (err, res) {
         if (err) { return error(err) }
