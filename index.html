@@ -333,7 +333,7 @@
           <li><a href="#services">SERVICIOS</a></li>
           <!-- <li><a href="#portfolio">PORTFOLIO</a></li> -->
           <!-- <li><a href="#pricing">PRECIOS</a></li> -->
-          <li><a href="#contactForm">CONTACTO</a></li>
+          <li><a href="#form">CONTACTO</a></li>
           <!-- <li><a href="https://wattbucket.com/blog/">BLOG</a></li> -->
           <li><a href="https://d2gedmiskgxvnb.cloudfront.net">AREA CLIENTE</a></li>
 
@@ -682,55 +682,70 @@
 
 
   <!-- Container (Contact Section) -->
-  <form id="contactForm" class="container-fluid bg-grey">
+  <!-- Container (Contact Section) -->
+  
+  <form id="form" class="container-fluid bg-grey" method="POST">
+    <h2>CONTACTO</h2>
 
 
     <div class="col-sm-7">
       <div class="row">
+        <div class="column">
+          <img src="./map.png" style="width:100%">
+        </div>
+        <div class="column"></div>
+        <label for="email">Nombre</label>
+        <input type="name" class="form-control" id="nombre" placeholder="Nombre">
 
-        <label for="validationTooltip01">Estoy interesado en</label>
-        <select class="form-control" name="name" required>
-          <option value="1" selected>diagnóstico en vehículos</option>
-          <option value="2">diagnóstico en industria</option>
-          <option value="3">diagnóstico en agroganadería</option>
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+
+
+
+        <label for="name">soy</label>
+        <select type="name" class="form-control" id="funcion" required>
+          <option value="Instalador" selected>Taller</option>
+          <option value="Empresa">RentaCar</option>
+          <option value="Ingenieria">Ingenieria</option>
+          <option value="Particular">Particular</option>
         </select>
 
 
-        <label for="validationTooltip01">soy</label>
-        <select class="form-control" name="content1" required>
-          <option value="1" selected>Taller</option>
-          <option value="2">Ingenieria</option>
-          <option value="3">Particular</option>
+
+        <label for="name">Servicio</label>
+        <select type="name" class="form-control" id="Servicio" required>
+          <option value="servicio gestión energética" selected>servicio gestión energética</option>
+          <option value="Optimizacion de Tarifa">Optimizacion de Tarifa</option>
+          <option value="Consutoria energética">Consutoria energética</option>
         </select>
 
+        <label for="Telefono">Telefono</label>
+        <input type="name" class="form-control" id="Telefono" placeholder="Telefono">
 
-        <label for="validationTooltip01">mi email</label>
-        <input type="email" class="form-control" id="inputEmail3" placeholder="Email" name="email" required>
 
 
-        <label for="validationTooltip01">comentario</label>
-        <textarea class="form-control" id="comments" name="content2" placeholder="comentario" rows="5"></textarea><br>
+
+
+
+        <label for="name">Comentario o consulta</label>
+        <input type="name" class="form-control" id="message2" placeholder="cometario" required>
+
+
+        <h4 id="response"></h4>
+
+        <label><input type="checkbox" class="agree"> Acepto la</label> <a href="./politicaprivacidad.html">Política
+          de Privacidad.</a>
+        <input type="submit" class="btn btn-primary" value="Enviar">
+
+
+        <div class="row">
+          <div class="col-sm-5">
+            <p><span class="glyphicon glyphicon-map-marker"></span> C/ Severo Ochoa, 27 - 29590, PTA Málaga </p>
+            <p><span class="glyphicon glyphicon-phone"></span> +34 600 366 211</p>
+            <!-- <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p> -->
+          </div>
+        </div>
       </div>
-
-      <div class="form-group row">
-        <button class="btn btn-default pull-right" id="submit" type="submit">Enviar</button>
-      </div>
-
-      <div id="toast"></div>
-
-
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck1">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-5">
-        <p><span class="glyphicon glyphicon-map-marker"></span> C/ Severo Ochoa, 27 - 29590, PTA Málaga </p>
-        <p><span class="glyphicon glyphicon-phone"></span> +34 600 366 211</p>
-        <!-- <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p> -->
-      </div>
-    </div>
 
   </form>
 
@@ -745,7 +760,7 @@
     <a href="#myPage" title="To Top">
       <span class="glyphicon glyphicon-chevron-up"></span>
     </a>
-    <p>Diagnosis en Línea <a href="https://www.diagnosisenlinea.es" title="Visit asolear">www.diagnosisenlinea.es</a>
+    <p>Diagnosis en Línea <a href="https://www.diagnosisenlinea.es" title="Visit DiagnosisEnLinea">www.diagnosisenlinea.es</a>
     </p>
 
   </footer>
@@ -771,60 +786,53 @@
 
   <script>
 
-    const form = document.getElementById('contactForm')
-    const url = 'https://utlgmv4pzd.execute-api.eu-west-1.amazonaws.com/dev/email/send'
-    const toast = document.getElementById('toast')
-    const submit = document.getElementById('submit')
 
-    function post(url, body, callback) {
-      var req = new XMLHttpRequest();
-      req.open("POST", url, true);
-      req.setRequestHeader("Content-Type", "application/json");
-      req.addEventListener("load", function () {
-        if (req.status < 400) {
-          callback(null, JSON.parse(req.responseText));
-        } else {
-          callback(new Error("Request failed: " + req.statusText));
+    (() => {
+      // aceptacion pollitica privacidad
+      $('form input[type="submit"]').prop("disabled", true);
+      $(".agree").click(function () {
+        if ($(this).prop("checked") == true) {
+          $('form input[type="submit"]').prop("disabled", false);
+        }
+        else if ($(this).prop("checked") == false) {
+          $('form input[type="submit"]').prop("disabled", true);
         }
       });
-      req.send(JSON.stringify(body));
-    }
 
-    function success() {
-      toast.innerHTML = 'Gracias, le atenderemos lo antes posible'
-      submit.disabled = false
-      submit.blur()
-      form.name.focus()
-      form.name.value = ''
-      form.email.value = ''
-      form.content.value = ''
-    }
 
-    function error(err) {
-      toast.innerHTML = 'Hay algun problem, por favor intentelo mas tarde'
-      submit.disabled = false
-      console.log(err)
-    }
+      // envio formulario
+      const form = document.querySelector('form');
+      const submitResponse = document.querySelector('#response');
+      // const formURL = 'https://aatm33sywk.execute-api.eu-west-1.amazonaws.com/Prod/submitForm';
+      const formURL = 'https://bjb4qsjodc.execute-api.eu-west-1.amazonaws.com/Prod/submitForm';
+      form.onsubmit = e => {
+        e.preventDefault();
 
-    form.addEventListener('submit', function (e) {
-      e.preventDefault()
-      toast.innerHTML = 'Enviando ...'
-      submit.disabled = true
+        // Capture the form data
+        let data = { "web": "diagnosisenlinea" };
+        Array.from(form).map(input => (data[input.id] = input.value));
+        submitResponse.innerHTML = 'Enviando...'
 
-      const payload = {
-        name: form.name.value,
-        email: form.email.value,
-        content1: form.content1.value,
-        content2: form.content2.value
-      }
-      post(url, payload, function (err, res) {
-        if (err) { return error(err) }
-        success()
-      })
-    })
+        // Create the AJAX request
+        var xhr = new XMLHttpRequest();
+        xhr.open(form.method, formURL, true);
+        xhr.setRequestHeader('Accept', 'application/json; charset=utf-8');
+        xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
 
+        // Send the collected data as JSON
+        xhr.send(JSON.stringify(data));
+
+        xhr.onloadend = response => {
+          if (response.target.status === 200) {
+            form.reset();
+            submitResponse.innerHTML = 'Formulario entregado !';
+          } else {
+            submitResponse.innerHTML = 'Error! Por favor intentelo mas tarde.';
+          }
+        };
+      };
+    })();
   </script>
-
 
 
 
